@@ -11,7 +11,7 @@ body{
 }
 
 .banner{
-    background-image: url('pic/bg.png');
+    background-image: url('pic/banner_bg.png');
     background-size: cover;
     height: 100vh;
     width: 100%;
