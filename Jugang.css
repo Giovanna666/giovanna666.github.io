@@ -7,7 +7,7 @@
 body{
     background-color: #3a3a3a;
     /* background-image: linear-gradient(-45deg,#575656 ,#3a3a3a ); */
-    
+
 }
 
 .banner{
@@ -38,20 +38,19 @@ nav .logo img{
 nav .menu a{
     color: #485972;
     margin: 0px 20px;
-    position: relative; 
+    position: relative;
     transition: .3s;
-    
-    
+
 }
 
 nav .menu a::after{
     content: '';
-    position: absolute;   
+    position: absolute;
     /* left: 0%; */
     right: 100%;
     height: 4px;
-    bottom: -5px;  
-    background-color: #EFA54B; 
+    bottom: -5px;
+    background-color: #EFA54B;
     border-radius: 10px;
     transition: .3s;
 }
@@ -62,8 +61,8 @@ nav .menu a:hover::after{
 }
 
 nav .menu a:hover{
-    text-shadow: 0 0 .5px #333; 
-    
+    text-shadow: 0 0 .5px #333;
+
 }
 
 
@@ -73,7 +72,7 @@ h2{
     letter-spacing: .1em;
     color: #E9E9E9;
     padding: 60px;
-    
+
 }
 
 h2 .color{
@@ -89,10 +88,11 @@ h2 .color{
 
 .feature .AC{
     position: relative;
+    /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     right: -40%;
     opacity: 0;
     transition: opacity 1.5s, right 1.5s ;
-    
+
 }
 
 .feature .AC.active{
@@ -116,7 +116,7 @@ h2 .color{
     border-radius: 20px;
     opacity: 0;
     transition: height 1.5s , opacity 1.5s ;
-    
+
 }
 
 .feature .content.active::after {
@@ -146,6 +146,7 @@ h2 .color{
 .feature .pic{
     width: 40%;
     position: relative;
+    /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     left: -20%;
     opacity: 0;
     transition: opacity 3s, left 2s ;
@@ -164,7 +165,7 @@ h2 .color{
 .feature  img{
     width: 100%;
     vertical-align: middle;
-    
+
 }
 
 .feature img:nth-child(2){
@@ -191,12 +192,12 @@ h2 .color{
     padding: 5%;
     background-color:rgb(54, 54, 54);
 
-     
 }
 
 
 .about .exp{
     position: relative;
+    /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     width: 15%;
     transition: 1s ;
 
@@ -213,47 +214,50 @@ h2 .color{
     text-align: center;
     font-size: 20px;
     color: #EFA54B;
-    font-weight: bold; 
-    position: relative;  
+    font-weight: bold;
+    position: relative;
+    /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     top:40%;
-    opacity: 0; 
-    transition: opacity 1s , top 1s ;  
-  
+    opacity: 0;
+    transition: opacity 1s , top 1s ;
+
 }
 
 .about .tit.active{
     top:0%;
-    opacity: 1;          
+    opacity: 1;
 }
 
 .about .num{
     text-align: center;
     font-size: 70px;
     color: #E9E9E9;
-    position: relative;  
+    position: relative;
+    /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     top:40%;
-    opacity: 0; 
-    transition: opacity 1s , top 1s ; 
-    transition-delay: .5s; 
+    opacity: 0;
+    transition: opacity 1s , top 1s ;
+    transition-delay: .5s;
 }
 .about .num.active{
     top:0%;
-    opacity: 1;          
+    opacity: 1;
 }
 
 .about .uni{
     text-align: center;
     color: #E9E9E9;
-    position: relative;  
+    position: relative;
+     /* 加 position: relative; 的目的是什麼呢？不加應該也不會出錯  */
     top:40%;
-    opacity: 0; 
-    transition: opacity 1s , top 1s ; 
-    transition-delay: 1s; 
+    opacity: 0;
+    transition: opacity 1s , top 1s ;
+    transition-delay: 1s;
 }
 
 .about .uni.active{
     top:0%;
-    opacity: 1;          
+    opacity: 1;
 }
 
 
@@ -282,16 +286,17 @@ h2 .color{
     background-color: rgba(46, 87, 148, 0.7);
     opacity: 0;
     transition: 0.5s;
-    
+
 }
 .projects .txt h4{
+    /* 這個我會考慮搭配 txt 用 flex 寫  */
     position: absolute;
     left: 40%;
     top: 40%;
     font-size: 25px;
     color: #E9E9E9;
     font-weight: normal;
-    z-index: 0;  
+    z-index: 0;
 }
 
 .projects .txt h4::after{
@@ -300,14 +305,14 @@ h2 .color{
     position: absolute;
     background-color: rgb(239,165,75,0.8);
     height: 20px;
-    width: 0%;   
+    width: 0%;
     left:14px;
     top:20px;
     z-index: -1;
     transition: width 0.7s 0.5s;
 }
 
-.projects .txt .more{    
+.projects .txt .more{
     position: absolute;
     right: 10%;
     bottom: 10%;
@@ -325,9 +330,6 @@ h2 .color{
 
 .footer{
     margin-top: 10%;
-    
-    
-  
 }
 
 .footer .contact{
@@ -343,14 +345,14 @@ h2 .color{
 }
 
 .footer .us{
-    
+
     opacity: .7;
     letter-spacing: .1em;
     /* background-color: tomato; */
     padding:8% 0% 0% 10% ;
     z-index: 2;
 
-    
+
 }
 
 .footer .cu{
@@ -364,7 +366,7 @@ h2 .color{
     display: flex;
     align-items: center;
     color: #e7e7e7;
-    
+
 }
 
 .footer a{
@@ -378,7 +380,7 @@ h2 .color{
 
 .footer i{
     padding-right: 10px;
-    
+
 }
 
 
@@ -402,6 +404,5 @@ h2 .color{
     color: #030303f1;
     position: relative;
     margin-top: 2%;
-    bottom:6px; 
-
+    bottom:6px;
 }

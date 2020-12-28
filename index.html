@@ -1,170 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jugang</title>
-    <link rel="stylesheet" href="Jugang.css">
-    <link href="css/all.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jugang</title>
+  <link rel="stylesheet" href="Jugang.css">
+  <link href="css/all.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="banner">
-        <nav>
-            <div class="logo"><img src="pic/LOGO.png" alt="logo"></div>
-            <div class="menu">
-                <a href="#" class="ab">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">PROJECTS</a>
-                <a href="#">NEWS</a>
-                <a href="#">CAREERS</a>
-                <a href="#">CONTACT</a>
-            </div>
+  <div class="banner">
+    <nav>
+      <div class="logo"><img src="pic/LOGO.png" alt="logo"></div>
+      <div class="menu">
+        <!-- class 名稱要好好取，不要用 ab 這種縮寫 -->
+        <a href="#" class="ab">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">NEWS</a>
+        <a href="#">CAREERS</a>
+        <a href="#">CONTACT</a>
+      </div>
 
-        </nav>
+    </nav>
+  </div>
+
+  <div class="feature">
+    <h2>FEATURE</h2>
+    <!-- f_wrap 跟 AC 是什麼其他人人如果只看 css 會不知道這是在處理什麼 -->
+    <div class="f_wrap">
+      <div class="content">
+        <div class="AC">
+          <h3>Architectural Concrete</h3>
+          <p>Architectural concrete is the modern solution, whether it is for civil engineering, economic or aesthetic
+            reasons.</p>
+        </div>
+      </div>
+      <div class="pic">
+        <img src="pic/ac.jpg" alt="Architectural Concrete">
+        <img src="pic/ac2.png" alt="Architectural Concrete">
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="exp">
+      <p class="tit">EXPERIENCES</p>
+      <p class="num"><strong>20+</strong></p>
+      <p class="uni">YEARS</p>
+    </div>
+    <div class="exp">
+      <p class="tit">CONSTRUCTION</p>
+      <p class="num"><strong>15+</strong></p>
+      <p class="uni">UNITS</p>
+    </div>
+  </div>
+
+  <div class="projects">
+    <h2>OUR <span class="color">PROJECTS</span></h2>
+    <div class="p_wrap">
+      <a href="#" class="p_col">
+        <img src="pic/p1.png" alt="project">
+        <div class="txt">
+          <h4>金山紀念園</h4>
+          <div class="more">MORE >></div>
+        </div>
+      </a>
+      <a href="#" class="p_col">
+        <img src="pic/p3.png" alt="project">
+        <div class="txt">
+          <h4>台豐玉嘉會館</h4>
+          <div class="more">MORE >></div>
+        </div>
+      </a>
+      <a href="#" class="p_col">
+        <img src="pic/p2.png" alt="project">
+        <div class="txt">
+          <h4>嘉義高鐵</h4>
+          <div class="more">MORE >></div>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="contact">
+      <div class="us">
+        <!-- contact us 應該也算個標題，可以跟上面一樣給他個 h2 / h3 -->
+        <div class="cu">CONTACT US</div>
+        <div class="info"><a href="#"><i class="fas fa-map-marker-alt"></i>臺中市西區民龍里臺灣大道二段239號</a></div>
+        <div class="info"><a href="#"><i class="fas fa-envelope"></i>zg2666@yahoo.com.tw</a></div>
+        <div class="info"><a href="#"><i class="fab fa-instagram"></i>jugangconstruction</a></div>
+        <div class="info"><a href="#"><i class="fas fa-mobile-alt"></i>+886 960778866</a></div>
+
+      </div>
+      <div class="card_bg">
+        <img src="pic/card_bg.png" alt="card">
+      </div>
+
     </div>
 
-    <div class="feature">
-        <h2>FEATURE</h2>
-        <div class="f_wrap">
-            <div class="content">
-                <div class="AC">
-                <h3>Architectural Concrete</h3>
-                <p>Architectural concrete is the modern solution, whether it is for civil engineering, economic or aesthetic reasons.</p>
-                </div>
-            </div>
-            <div class="pic">
-                <img src="pic/ac.jpg" alt="Architectural Concrete">
-                <img src="pic/ac2.png" alt="Architectural Concrete">
-            </div>
-        </div>
-    </div>
-
-    <div class="about">
-        <div class="exp">
-            <p class="tit">EXPERIENCES</p>
-            <p class="num"><strong>20+</strong></p>
-            <p class="uni">YEARS</p>
-        </div>
-        <div class="exp">
-            <p class="tit">CONSTRUCTION</p>
-            <p class="num"><strong>15+</strong></p>
-            <p class="uni">UNITS</p>
-        </div>
-    </div>
-
-    <div class="projects">
-        <h2>OUR <span class="color">PROJECTS</span></h2>
-        <div class="p_wrap">
-            <a href="#" class="p_col">
-                <img src="pic/p1.png" alt="project">
-                <div class="txt">
-                    <h4>金山紀念園</h4>
-                    <div class="more">MORE >></div>
-                </div>
-            </a>
-            <a href="#" class="p_col">
-                <img src="pic/p3.png" alt="project">
-                <div class="txt">
-                    <h4>台豐玉嘉會館</h4>
-                    <div class="more">MORE >></div>
-                </div>
-            </a>
-            <a href="#" class="p_col">
-                <img src="pic/p2.png" alt="project">
-                <div class="txt">
-                    <h4>嘉義高鐵</h4>
-                    <div class="more">MORE >></div>
-                </div>
-            </a>
- 
-
-        </div>
-    </div>
-
-    
-    
-    <footer class="footer">
-        <div class="contact">
-            <div class="us">
-                <div class="cu">CONTACT US</div>
-                <div class="info"><a href="#"><i class="fas fa-map-marker-alt"></i>臺中市西區民龍里臺灣大道二段239號</a></div>
-                <div class="info"><a href="#"><i class="fas fa-envelope"></i>zg2666@yahoo.com.tw</a></div>
-                <div class="info"><a href="#"><i class="fab fa-instagram"></i>jugangconstruction</a></div>
-                <div class="info"><a href="#"><i class="fas fa-mobile-alt"></i>+886 960778866</a></div>
-                
-            </div>
-            <div class="card_bg">
-                <img src="pic/card_bg.png" alt="card">
-            </div>
-            
-        </div>
-
-        <p class="cr">&copy;giovanna666</p>
-    </footer>
+    <p class="cr">&copy;giovanna666</p>
+  </footer>
 
 
 
 
-    
+  <script src="jquery-3.5.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
 
-   
-
-<script src="jquery-3.5.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        let space = $(window).height() / 1.5;
-        let space2 = $(window).height() / 6;
-        let bar = $(window).scrollTop() ;
-        let ft = $(".feature").offset().top - space;
-        let at = $(".feature").offset().top + 20;
-        console.log(bar);
-        
-
-        $(window).scroll(function(){
-            bar = $(window).scrollTop();
-            if(bar >= ft){
-                $(".content,.AC,.pic").addClass("active");
-                
-            }
-            if(bar < ft){
-                $(".content,.AC,.pic").removeClass("active");   
-            }
-
-            if(bar >= at){
-                $(".tit,.num,.uni").addClass("active");
-            }
-            if(bar < at){
-                $(".tit,.num,.uni").removeClass("active");   
-            }
-
-        })
-
-       
+      let space = $(window).height() / 1.5;
+      let space2 = $(window).height() / 6;
+      let bar = $(window).scrollTop();
+      let ft = $(".feature").offset().top - space;
+      let at = $(".feature").offset().top + 20;
+      console.log(bar); // console.log 要記得拔掉！
 
 
+      $(window).scroll(function () {
+        bar = $(window).scrollTop();
+        if (bar >= ft) {
+          $(".content,.AC,.pic").addClass("active");
 
+        }
+        if (bar < ft) {
+          $(".content,.AC,.pic").removeClass("active");
+        }
 
+        if (bar >= at) {
+          $(".tit,.num,.uni").addClass("active");
+        }
+        if (bar < at) {
+          $(".tit,.num,.uni").removeClass("active");
+        }
 
-
-
-
-
-
-
-
-
+      })
 
 
     })
 
 
+  </script>
 
-
-
-
-</script>
-    
 </body>
+
 </html>
