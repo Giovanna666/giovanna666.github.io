@@ -41,15 +41,19 @@
     </div>
 
     <div class="about">
-        <div class="exp">
+        <div class="hov">
+        <div class="exp"> 
             <p class="tit">EXPERIENCES</p>
             <p class="num"><strong>20+</strong></p>
             <p class="uni">YEARS</p>
         </div>
+        </div>
+        <div class="hov">
         <div class="exp">
             <p class="tit">CONSTRUCTION</p>
             <p class="num"><strong>15+</strong></p>
             <p class="uni">UNITS</p>
+        </div>
         </div>
     </div>
 
@@ -128,14 +132,14 @@
                 $(".content,.AC,.pic").addClass("active");
                 
             }
-            if(bar < ft){
+            if(bar < ft-100){
                 $(".content,.AC,.pic").removeClass("active");   
             }
 
             if(bar >= at){
                 $(".tit,.num,.uni").addClass("active");
             }
-            if(bar < at){
+            if(bar < at-100){
                 $(".tit,.num,.uni").removeClass("active");   
             }
 

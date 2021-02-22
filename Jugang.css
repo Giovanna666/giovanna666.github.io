@@ -91,11 +91,12 @@ h2 .color{
     position: relative;
     right: -40%;
     opacity: 0;
-    transition: opacity 1.5s, right 1.5s ;
+    
     
 }
 
 .feature .AC.active{
+    transition: opacity 1.5s, right 1.5s ;
     right: 0%;
     opacity: 1;
 }
@@ -115,11 +116,12 @@ h2 .color{
     left:-20px;
     border-radius: 20px;
     opacity: 0;
-    transition: height 1.5s , opacity 1.5s ;
+    
     
 }
 
 .feature .content.active::after {
+    transition: height 1.5s , opacity 1.5s ;
     height: 100%;
     opacity: 1;
 }
@@ -148,17 +150,14 @@ h2 .color{
     position: relative;
     left: -20%;
     opacity: 0;
-    transition: opacity 3s, left 2s ;
+    
 }
 
 .feature .pic.active{
+    transition: opacity 3s, left 2s ;
     left: 0%;
     opacity: 1;
 }
-
-
-
-
 
 
 .feature  img{
@@ -195,15 +194,22 @@ h2 .color{
 }
 
 
+.about .hov{
+    padding: 1%; 
+    width: 20%;
+
+}
+
 .about .exp{
     position: relative;
-    width: 15%;
-    transition: 1s ;
+    width: 100%;
+    height: 100%;
 
 }
 
 
-.about .exp:hover{
+.about .hov:hover .exp{
+    transition: .3s ;
     text-shadow: 3px 3px .5px rgb(32, 32, 32);
     transform: translate(-3px,-3px);
 }
@@ -217,11 +223,11 @@ h2 .color{
     position: relative;  
     top:40%;
     opacity: 0; 
-    transition: opacity 1s , top 1s ;  
-  
+      
 }
 
 .about .tit.active{
+    transition: opacity 1s , top 1s ;
     top:0%;
     opacity: 1;          
 }
@@ -233,10 +239,11 @@ h2 .color{
     position: relative;  
     top:40%;
     opacity: 0; 
-    transition: opacity 1s , top 1s ; 
-    transition-delay: .5s; 
+    
 }
 .about .num.active{
+    transition: opacity 1s , top 1s ; 
+    transition-delay: .5s; 
     top:0%;
     opacity: 1;          
 }
@@ -247,11 +254,12 @@ h2 .color{
     position: relative;  
     top:40%;
     opacity: 0; 
-    transition: opacity 1s , top 1s ; 
-    transition-delay: 1s; 
+   
 }
 
 .about .uni.active{
+    transition: opacity 1s , top 1s ; 
+    transition-delay: 1s; 
     top:0%;
     opacity: 1;          
 }
@@ -259,10 +267,13 @@ h2 .color{
 
 .projects{
     margin-top: 5%;
+    height: 70vh;
 }
 .projects .p_wrap{
     display: flex;
 }
+
+
 
 .projects .p_col{
     width: 33.333%;
@@ -271,6 +282,7 @@ h2 .color{
 
 .projects img{
     width: 100%;
+    
     vertical-align: middle;
 }
 
@@ -282,7 +294,6 @@ h2 .color{
     background-color: rgba(46, 87, 148, 0.7);
     opacity: 0;
     transition: 0.5s;
-    
 }
 .projects .txt h4{
     position: absolute;
@@ -325,9 +336,6 @@ h2 .color{
 
 .footer{
     margin-top: 10%;
-    
-    
-  
 }
 
 .footer .contact{
@@ -335,7 +343,7 @@ h2 .color{
     width: 50%;
     height: 50vh;
     margin: auto;
-    position: relative;
+    position: relative;l-
     display: flex;
     overflow: hidden;
     box-shadow: 3px 3px 10px 2px rgba(34, 33, 33, 0.685);
@@ -349,8 +357,6 @@ h2 .color{
     /* background-color: tomato; */
     padding:8% 0% 0% 10% ;
     z-index: 2;
-
-    
 }
 
 .footer .cu{
@@ -364,7 +370,6 @@ h2 .color{
     display: flex;
     align-items: center;
     color: #e7e7e7;
-    
 }
 
 .footer a{
@@ -377,8 +382,7 @@ h2 .color{
 }
 
 .footer i{
-    padding-right: 10px;
-    
+    padding-right: 10px;   
 }
 
 
